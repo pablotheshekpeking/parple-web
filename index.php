@@ -50,9 +50,11 @@
                             With the Parple Event App, you have a reliable and efficient transportation solution at your fingertips.</p>
                             <br>
                             <div class="search-container">
-                                <input type="text" class="search-input" placeholder="Enter your Email">
-                                <a href=""><button class="search-button" id="submit"><span>Join Waitlist</span></button></a>
-                            </div>
+                                <form action="conn.php" method="post" style="margin: 0px; padding: 0px;">
+                                    <input type="text" class="search-input" name="email" placeholder="Enter your Email" required>
+                                    <button class="search-button" id="submit" type="submit">Join Waitlist</button>
+                                </form>
+                            </div>                            
                     </div>
                         <div class="col-md-6">
                             <img src="images/phone1.png" alt="" id="phone">
@@ -223,7 +225,7 @@
                 <div class="container-fluid">
                     <br><br>
                     <div class="col-sm-6" style="margin-bottom: 25px;">
-                        <form>
+                        <form action="process_form.php" method="post">
                             <label class="radio-container">
                                 <input type="radio" class="radio-input" name="option" value="option1">
                                 <span class="radio-icon"></span>
